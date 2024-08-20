@@ -1,6 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Mi mascota favorita";
+    ViewData["Title2"] = "Mi Viaje";
     ViewData["Imagen"]="Mascota.jpg";
+    ViewData["Viaje"]="Cataratas.jpg";
 }
 
 <div class="text-center">
@@ -11,10 +13,25 @@
         <div>
             <img src="~/images/@ViewData["Imagen"]" alt="Imagen de mi mascota favoria">
         </div>
+        <br>
         <h2>Sobre mi perrita Shih Tzu</h2>
 
-        <p>Mi perrita Shih Tzu es una compañera llena de amor y alegría. Con su pelaje suave y ojos expresivos, siempre sabe cómo sacarme una sonrisa. Aunque es pequeña, su personalidad es inmensa, y le encanta estar rodeada de su familia. Le fascina acurrucarse en su cama favorita después de un día lleno de aventuras y juegos. Su lealtad y dulzura la convierten en el centro de atención en nuestro hogar.</p>
+        <p>Mi perrita Shih Tzu es una compañera llena de amor y alegría. Se llama Pitufa con su pelaje suave y ojos expresivos, siempre sabe cómo sacarme una sonrisa. Aunque es pequeña, su personalidad es inmensa, y le encanta estar rodeada de su familia. Le fascina acurrucarse en su cama favorita después de un día lleno de aventuras y juegos. Su lealtad y dulzura la convierten en el centro de atención de mi hogar.</p>
 
     </article>
 
+    <br><br>
+
+     <h1 class="display-4">@ViewData["Title2"]</h1>
+
+    <article>
+        <br>
+        <h2>Visita a las Cataratas</h2>
+        <br>
+        <p>Durante nuestro viaje, visitamos unas impresionantes cataratas. La vista era espectacular, con aguas cristalinas cayendo desde gran altura y creando un arco iris en la bruma. Caminamos por senderos rodeados de vegetación y disfrutamos del sonido y la frescura del agua. Fue una experiencia inolvidable rodeados de belleza natural.</p>
+
+        <div>
+            <img src="~/images/@ViewData["Viaje"]" alt="Imagen de Cataratas">
+        </div>
+    </article>
 </div>
